@@ -178,14 +178,14 @@ footer p {
 .profile-desa {
   padding-bottom: 0.5rem;
   border-color: cadetblue;
-  border-style: dotted;
+  border-bottom-style: dotted;
   border-bottom-width: 1px;
 }
 
 .content-header {
   padding-bottom: 0.5rem;
   border-color: cadetblue;
-  border-style: dotted;
+  border-bottom-style: dotted;
   border-bottom-width: 1px;
   margin-bottom: 5px;
   font-weight: bold;
@@ -321,6 +321,6 @@ footer p {
 ::before {
   box-sizing: border-box;
   border-width: 0;
-  border-style: solid;
+  border-bottom-style: solid;
   border-color: currentColor;
 }
