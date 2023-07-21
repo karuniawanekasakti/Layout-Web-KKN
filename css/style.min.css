@@ -2,17 +2,12 @@
   font-family: "Poppins";
 }
 
+/* .card {
+  height: 500px;
+} */
+
 .card-comments img {
   width: 4rem;
-}
-
-.card img {
-  display: block;
-  max-width: 450px;
-  max-height: 200px;
-  width: 400px;
-  height: auto;
-  object-fit: cover;
 }
 
 .background-image-holder {
@@ -600,4 +595,198 @@ footer p {
   border-bottom: #060606;
   border-bottom-style: dotted;
   border-bottom-width: 1px;
+}
+
+.card-comments img {
+  width: 4rem;
+}
+
+.hub-icon {
+  color: var(--accent-color);
+  width: 3rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.profile-desa {
+  padding-bottom: 0.5rem;
+  border-color: cadetblue;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+}
+
+.content-header {
+  padding-bottom: 0.5rem;
+  border-color: cadetblue;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.header-desc {
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.date-desc .author-desc {
+  align-items: center;
+  display: inline-flex;
+  margin-bottom: 0.25rem;
+  margin-right: 0.625rem;
+}
+
+.view-desc {
+  align-items: center;
+  display: inline-flex;
+}
+
+.icon-desc {
+  color: chocolate;
+  margin-right: 0.5rem;
+  width: auto;
+}
+
+.new-post-card img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.new-post-card img:hover {
+  transform: scale(1.5);
+}
+
+.running-text {
+  overflow: hidden;
+  min-height: 1px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0;
+  display: flex;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+    0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.running-text-header {
+  z-index: 10;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  background-color: #064635;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.running-content {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.running-content-text {
+  position: absolute;
+  white-space: nowrap;
+  left: -765px;
+  display: flex;
+}
+
+*,
+::after,
+::before {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-transform: translateX(var(--tw-translate-x))
+    translateY(var(--tw-translate-y)) rotate(var(--tw-rotate))
+    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+    scaleY(var(--tw-scale-y));
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-ring-inset: var(--tw-empty);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: var(--tw-empty);
+  --tw-brightness: var(--tw-empty);
+  --tw-contrast: var(--tw-empty);
+  --tw-grayscale: var(--tw-empty);
+  --tw-hue-rotate: var(--tw-empty);
+  --tw-invert: var(--tw-empty);
+  --tw-saturate: var(--tw-empty);
+  --tw-sepia: var(--tw-empty);
+  --tw-drop-shadow: var(--tw-empty);
+  --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  border-width: 0;
+  border-bottom-style: solid;
+  border-color: currentColor;
+}
+
+.img_box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.img_box span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 17%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+.img_box:hover span {
+  height: 20%;
 }
