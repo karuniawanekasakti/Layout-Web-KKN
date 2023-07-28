@@ -790,3 +790,12 @@ footer p {
 .img_box:hover span {
   height: 20%;
 }
+
+.text-grey {
+  color: #a1a1a1;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+}
