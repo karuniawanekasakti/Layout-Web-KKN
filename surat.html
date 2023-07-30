@@ -204,48 +204,30 @@
             </div>
             <div class="card table-container mt-2">
               <div id="data-jk" class="card-header mt-2 text-center font-weight-bold">
-                <span>Sura</span>
+                <span>Surat Keterangan Tidak Mampu</span>
               </div>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Dusun</th>
-                    <th scope="col">0-1</th>
-                    <th scope="col">2-4</th>
-                    <th scope="col">5-14</th>
-                    <th scope="col">15-39</th>
-                    <th scope="col">40-64</th>
-                    <th scope="col">Total</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>7</td>
-                    <td>13</td>
-                    <td>86</td>
-                    <td>252</td>
-                    <td>137</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>13</td>
-                    <td>24</td>
-                    <td>79</td>
-                    <td>212</td>
-                    <td>144</td>
-                    <td></td>
-                  </tr>
-                    <th scope="row">3</th>
-                    <td>0</td>
-                    <td>8</td>
-                    <td>54</td>
-                    <td>199</td>
-                    <td>159</td>
-                    <td></td>
-                </tbody>
-              </table>
+              <form>
+                <div class="mb-3">
+                  <label for="nomorSurat" class="form-label">Nomor Surat</label>
+                  <input type="text" class="form-control" id="nomorSurat" aria-describedby="emailHelp">
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control" id="nama" aria-describedby="emailHelp">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
               <div class="card-header text-center font-weight-bold">
                 <span>Penduduk Berdasarkan Jenis Kelamin</span>
               </div>
