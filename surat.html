@@ -75,13 +75,20 @@
                 <a href="statistik.html" class="nav-link waves-effect"
                   >Statistik Kependudukan</a>
               </li>
-              <li class="nav-item">
+              <li class="dropdown nav-item">
                 <a
                   class="nav-link waves-effect"
                   href="peta.html"
                   target="_blank"
-                  >Peta Desa</a
+                  >Peta Desa<i class="bi bi-chevron-down ml-1"></i
+                ></a
                 >
+                <ul>
+                  <li><a href="#">Peta Wilayah Batas Admin Desa</a></li>
+                  <li><a href="#">Peta TPS (Tempat pembuangan sementara)</a></li>
+                  <li><a href="#">Peta Penggunaan Lahan</a></li>
+                  <li><a href="#">Peta Potensi Persebaran Parawisata</a></li>
+                </ul>
               </li>
               <li class="dropdown nav-item">
                 <a
@@ -122,16 +129,19 @@
     <main class="pt-5 mt-3">
       <div class="container">
         <div class="row align-items-start">
-          <div class="col-sm-4">
+          <div class="col">
             <div class="accordion-container">
-              <div class="accordion" id="accordionExample">
+            <div class="card table-container p-3 mb-3">
+                <h1 class="text-heading">Pengajuan Surat</h1>
+            </div>
+              <div class="accordion" id="listSurat">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button
                       class="accordion-button d-flex align-items-center"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
+                      data-bs-target="#formSKTM"
                       aria-expanded="true"
                       aria-controls="collapseOne"
                     >
@@ -139,151 +149,211 @@
                       <b>Surat Keterangan Tidak Mampu (SKTM)</b>
                     </button>
                   </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <a href="#data-usia">Usia</a>
-                      <img width="270"
-                      src="https://drive.google.com/uc?export=view&id=1gjb7S-OGGqEG1hHFM4BCX02UVz23i8Fo" alt="">
-                      <img width="270"
-                      src="https://drive.google.com/uc?export=view&id=1gjb7S-OGGqEG1hHFM4BCX02UVz23i8Fo" alt="">
-                      <img width="270"
-                      src="https://drive.google.com/uc?export=view&id=1gjb7S-OGGqEG1hHFM4BCX02UVz23i8Fo" alt="">
+                    <div id="formSKTM" class="accordion-collaps collapse" data-bs-parent="listSurat">
+                        <div class="row">
+                            <div class="col">
+                                <form class="card p-3">
+                                    <div class="card-header text-center font-weight-bold">
+                                        <span>Data Diri Pemohon</span>
+                                    </div>
+                                    <div class="mb-3 mt-3">
+                                    <label for="nomorSurat" class="form-label">Nomor Surat</label>
+                                    <input type="text" class="form-control" id="nomorSurat" aria-describedby="emailHelp">
+                                    <div class="mb-3">
+                                    <label for="nama" class="form-label">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="nama" aria-describedby="emailHelp">
+                                    <div class="mb-3">
+                                    <label for="nik" class="form-label">NIK</label>
+                                    <input type="text" class="form-control" id="nik" aria-describedby="emailHelp">
+                                    <div class="mb-3">
+                                    <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
+                                    <select name="jenisKelamin" id="jenisKelamin" class="form-control">
+                                        <option value="-" selected="selected">---</option>
+                                        <option value="L">Laki-laki</option>
+                                        <option value="P">Perempuan</option>
+                                    </select>
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="tempatLahir" class="form-label">Tempat Lahir</label>
+                                    <input type="text" class="form-control" id="tempatLahir">
+                                    </div>       
+                                    <div class="mb-3">
+                                    <label for="tanggalLahir" class="form-label">Tanggal Lahir</label>
+                                    <input type="text" class="form-control" id="tanggalLahir">
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="status" class="form-label">Status Perkawinan</label>
+                                    <input type="text" class="form-control" id="status">
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="pekerjaan" class="form-label">Pekerjaan</label>
+                                    <input type="text" class="form-control" id="pekerjaan">
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="alamat" class="form-label">Alamat</label>
+                                    <input type="text" class="form-control" id="alamat">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Unduh Surat</button>
+                                </form>
+                            </div>
+                            <div class="col">
+                                <img src="https://drive.google.com/uc?export=view&id=14enRHfpd0ujll4Rbh4om9IdQBDgjEC-g" class="img-fluid rounded-start" alt="...">
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="accordion-body">
-                      <a href="#data-jk">Jenis kelamin</a>
-                      <img width="270"
-                      src="https://drive.google.com/uc?export=view&id=164uwhxAXDiqF24VoeZ_hKzl1ZQukaWud" alt="">
-                      <br>
-                      <img width="270"
-                      src="https://drive.google.com/uc?export=view&id=1uuSDCdDwXrGMn5QXR15cqcCUpS8Cx_9-" alt="">
-                      <br>
-                      <img width="270"
-                      src="https://drive.google.com/uc?export=view&id=1uZ6kuJKwOG8Fko_AY5sf4SLvEZ7sTnD9" alt="">
-                    </div>
-                  </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button
-                      class="accordion-button collapsed"
+                      class="accordion-button d-flex align-items-center"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
+                      data-bs-target="#formSN"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
                     >
-                      <i
-                        class="bi bi-bar-chart-fill"
-                        style="margin-right: 5px"
-                      ></i>
-                      <b>Statistik keluarga</b>
+                      <i class="bi bi-person" style="margin-right: 5px"></i>
+                      <b>Surat Nikah</b>
                     </button>
                   </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <a href="#data-kk">Jumlah KK</a>
-                      <img width="270"
-                      src="https://drive.google.com/uc?export=view&id=1gjb7S-OGGqEG1hHFM4BCX02UVz23i8Fo" alt="">
+                    <div id="formSN" class="accordion-collaps collapse" data-bs-parent="listSurat">
+                        <div class="row">
+                            <div class="col">
+                                <form class="card p-3">
+                                    <div class="card-header text-center font-weight-bold">
+                                        <span>Data Diri Pemohon</span>
+                                    </div>
+                                    <div class="mb-3 mt-3">
+                                    <label for="nomorSurat" class="form-label">Nomor Surat</label>
+                                    <input type="text" class="form-control" id="nomorSurat" aria-describedby="emailHelp">
+                                    <div class="mb-3">
+                                    <label for="nama" class="form-label">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="nama" aria-describedby="emailHelp">
+                                    <div class="mb-3">
+                                    <label for="nik" class="form-label">NIK</label>
+                                    <input type="text" class="form-control" id="nik" aria-describedby="emailHelp">
+                                    <div class="mb-3">
+                                    <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
+                                    <select name="jenisKelamin" id="jenisKelamin" class="form-control">
+                                        <option value="-" selected="selected">---</option>
+                                        <option value="L">Laki-laki</option>
+                                        <option value="P">Perempuan</option>
+                                    </select>
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="tempatLahir" class="form-label">Tempat Lahir</label>
+                                    <input type="text" class="form-control" id="tempatLahir">
+                                    </div>       
+                                    <div class="mb-3">
+                                    <label for="tanggalLahir" class="form-label">Tanggal Lahir</label>
+                                    <input type="text" class="form-control" id="tanggalLahir">
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="status" class="form-label">Status Perkawinan</label>
+                                    <input type="text" class="form-control" id="status">
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="pekerjaan" class="form-label">Pekerjaan</label>
+                                    <input type="text" class="form-control" id="pekerjaan">
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="alamat" class="form-label">Alamat</label>
+                                    <input type="text" class="form-control" id="alamat">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Unduh Surat</button>
+                                </form>
+                            </div>
+                            <div class="col">
+                                <img src="https://drive.google.com/uc?export=view&id=14enRHfpd0ujll4Rbh4om9IdQBDgjEC-g" class="img-fluid rounded-start" alt="...">
+                            </div>
+                        </div>
+
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-8">
-            <div id="data-usia" class="card table-container p-3">
-              <h1 class="text-heading">Pengajuan Surat</h1>
-            </div>
-            <div class="card table-container mt-2">
-              <div id="data-jk" class="card-header mt-2 text-center font-weight-bold">
-                <span>Surat Keterangan Tidak Mampu</span>
-              </div>
-              <form>
-                <div class="mb-3">
-                  <label for="nomorSurat" class="form-label">Nomor Surat</label>
-                  <input type="text" class="form-control" id="nomorSurat" aria-describedby="emailHelp">
-                <div class="mb-3">
-                  <label for="nama" class="form-label">Nama Lengkap</label>
-                  <input type="text" class="form-control" id="nama" aria-describedby="emailHelp">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button d-flex align-items-center"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#formSKMD"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <i class="bi bi-person" style="margin-right: 5px"></i>
+                      <b>Surat Keterangan Tidak Mampu (SKTM)</b>
+                    </button>
+                  </h2>
+                    <div id="formSKMD" class="accordion-collaps collapse" data-bs-parent="listSurat">
+                        <div class="row">
+                            <div class="col">
+                                <form class="card p-3">
+                                    <div class="card-header text-center font-weight-bold">
+                                        <span>Data Diri Almarhum/Almarhumah</span>
+                                    </div>
+                                    <div class="mb-3 mt-3">
+                                    <label for="nomorSurat" class="form-label">Nomor Surat</label>
+                                    <input type="text" class="form-control" id="nomorSurat" aria-describedby="emailHelp">
+                                    <div class="mb-3">
+                                    <label for="nama" class="form-label">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="nama" aria-describedby="emailHelp">
+                                    <div class="mb-3">
+                                    <label for="tempatLahir" class="form-label">Tempat Lahir</label>
+                                    <input type="text" class="form-control" id="tempatLahir">
+                                    </div>       
+                                    <div class="mb-3">
+                                    <label for="tanggalLahir" class="form-label">Tanggal Lahir</label>
+                                    <input type="text" class="form-control" id="tanggalLahir">
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="jenisKelamin" class="form-label">Agama</label>
+                                    <select name="jenisKelamin" id="jenisKelamin" class="form-control">
+                                        <option value="-" selected="selected">---</option>
+                                        <option value="L">Islam</option>
+                                        <option value="P">Katolik</option>
+                                        <option value="P">Hindu</option>
+                                        <option value="P">Budha</option>
+                                        <option value="P">Kong Hu Chu</option>
+                                    </select>
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
+                                    <select name="jenisKelamin" id="jenisKelamin" class="form-control">
+                                        <option value="-" selected="selected">---</option>
+                                        <option value="L">Laki-laki</option>
+                                        <option value="P">Perempuan</option>
+                                    </select>
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
+                                    <select name="jenisKelamin" id="jenisKelamin" class="form-control">
+                                        <option value="-" selected="selected">---</option>
+                                        <option value="L">Laki-laki</option>
+                                        <option value="P">Perempuan</option>
+                                    </select>
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="pekerjaan" class="form-label">Pekerjaan</label>
+                                    <input type="text" class="form-control" id="pekerjaan">
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="alamat" class="form-label">Alamat</label>
+                                    <input type="text" class="form-control" id="alamat">
+                                    </div>
+                                    <div class="mb-3">
+                                    <label for="nik" class="form-label">NIK</label>
+                                    <input type="text" class="form-control" id="nik" aria-describedby="emailHelp">
+                                    <button type="submit" class="btn btn-primary btn-block">Unduh Surat</button>
+                                </form>
+                            </div>
+                            <div class="col">
+                                <img src="https://drive.google.com/uc?export=view&id=14enRHfpd0ujll4Rbh4om9IdQBDgjEC-g" class="img-fluid rounded-start" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-              <div class="card-header text-center font-weight-bold">
-                <span>Penduduk Berdasarkan Jenis Kelamin</span>
-              </div>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Dusun</th>
-                    <th scope="col">Laki-laki</th>
-                    <th scope="col">Perempuan</th>
-                    <th scope="col">Total</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>241</td>
-                    <td>259</td>
-                    <td>500</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>271</td>
-                    <td>274</td>
-                    <td>545</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>263</td>
-                    <td>276</td>
-                    <td>539</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="card table-container mt-2">
-              <div class="card-header mt-2 text-center font-weight-bold">
-                <span id="data-kk">Jumlah Kartu Keluarga</span>
-              </div>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">Dusun 1</th>
-                    <th scope="col">Dusun 2</th>
-                    <th scope="col">Dusun 3</th>
-                    <th scope="col">Total</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>159</td>
-                    <td>169</td>
-                    <td>156</td>
-                    <td>484</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </div>
