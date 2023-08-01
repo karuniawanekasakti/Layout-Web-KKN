@@ -1682,17 +1682,23 @@
                         <label for="harga" class="form-label"
                           >Harga (Rupiah)</label
                         >
-                        <input type="text" class="form-control" id="harga" />
+                        <div class="input-group">
+                          <span class="input-group-text">Rp.</span>
+                          <input type="text" class="form-control" id="harga" />
+                        </div>
                       </div>
                       <div class="mb-3">
                         <label for="terbilang" class="form-label"
                           >Terbilang (Rupiah)</label
                         >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="terbilang"
-                        />
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="terbilang"
+                          />
+                          <span class="input-group-text">Rupiah</span>
+                        </div>
                       </div>
                       <div class="card-header text-center font-weight-bold">
                         <span>Batas Tanah</span>
